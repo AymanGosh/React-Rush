@@ -4,7 +4,8 @@ import DescriptionPanel from "./DescriptionPanel";
 import "./HomePage.css";
 import React, { useEffect, useRef , useState} from "react";
 import { challenges } from "../data/challenges";
-
+import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels'
+ 
 
 const defaultCode = challenges[0].defaultCode;
 
@@ -14,21 +15,33 @@ export default function HomePage() {
   return (
   <div className="page-container">
       <header className="navbar">🚀 Navbar</header>
+         
+      <PanelGroup direction="horizontal" className="h-full">
+        {/* Left Column: 2x width (66%) */}
+        <Panel defaultSize={66}>
+          <PanelGroup direction="vertical">
+            {/* Top: Description */}
+            <Panel defaultSize={30} className="live-preview live-preview p-4 overflow-auto">
+               <DescriptionPanel /> 
+            </Panel>
+            <PanelResizeHandle className="h-1 bg-gray-300 cursor-row-resize" />
+            {/* Bottom: CodeEditor */}
+            <Panel defaultSize={70} className="p-3 overflow-auto">
+              <CodeEditor code={code} onChange={setCode} />
+            </Panel>
+          </PanelGroup>
+        </Panel>
 
-      <main className="main-grid">
-        <div className="question">
-          <DescriptionPanel/> 
-        </div>
+        {/* Horizontal Resize Handle */}
+        <PanelResizeHandle className="w-1 bg-gray-300 cursor-col-resize" />
 
-        <div className="code-editor"> 
-          <CodeEditor  code={code} onChange={setCode} /> 
-        </div>
+        {/* Right Column: 1x width (34%) */}
+        <Panel defaultSize={34} className="live-preview p-3 overflow-auto bg-gray-50 border-l border-gray-200">
+          <LivePreview code={code} />
+        </Panel>
+      </PanelGroup>
 
-        <div className="live-preview">  
-          <LivePreview code={code} />     
-        </div>
-      </main>
-
+ 
       <footer className="footer">© 2025 Footer</footer>
     </div>
   );
