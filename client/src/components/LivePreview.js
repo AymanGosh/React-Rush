@@ -12,26 +12,27 @@ export default function LivePreview({ code }) {
         }).code;
 
         const html = `
-          <html>
-            <head></head>
-            <body>
-              <div id="root"></div>
-              <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-              <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-              <script>
-                try {
-                  ${transpiledCode}
-                } catch (err) {
-                  const error = document.createElement('pre');
-                  error.style.color = 'red';
-                  error.innerText = err.message;
-                  document.body.innerHTML = '';
-                  document.body.appendChild(error);
-                }
-              </script>
-            </body>
-          </html>
-        `;
+                      <html>
+                        <head></head>
+                        <body>
+                          <div id="root"></div>
+                          <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+                          <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+                          <script>
+                            try {
+                              ${transpiledCode}
+                            } catch (err) {
+                              const error = document.createElement('pre');
+                              error.style.color = 'red';
+                              error.innerText = err.message;
+                              document.body.innerHTML = '';
+                              document.body.appendChild(error);
+                            }
+                          </script>
+                        </body>
+                      </html>
+                    `;
+
 
         setSrcDoc(html);
       } catch (err) {
