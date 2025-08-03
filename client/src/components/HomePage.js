@@ -12,6 +12,25 @@ const defaultCode = challenges[0].defaultCode;
 export default function HomePage() {
   const [code, setCode] = useState(defaultCode);
 
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ code }) // `code` is your state variable
+      });
+
+      const data = await response.json();
+      console.log(data); // Show the result or update UI
+      alert(data.message); // or use setState for test results
+    } catch (err) {
+      console.error('Error submitting code:', err);
+      alert("❌ Failed to submit code");
+    }
+  };
+
   return (
   <div className="page-container">
       <header className="navbar">🚀 Navbar</header>
@@ -43,6 +62,10 @@ export default function HomePage() {
 
  
       <footer className="footer">© 2025 Footer</footer>
+
+      <button onClick={handleSubmit} className="bg-blue-600 text-white px-4 py-2 rounded">
+  Submit
+</button>
     </div>
   );
 }
