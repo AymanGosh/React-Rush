@@ -57,7 +57,7 @@ To deploy the changes, follow these steps:
    npm run build
    ```
 
-4. **Deploy to Firebase:**
+4. **Deploy to Firebase :**
    ```sh
    firebase deploy
    ```
