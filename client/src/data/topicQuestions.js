@@ -1,65 +1,92 @@
 export const topicQuestions = {
-  "arrays": [
-    { id: "arr-two-sum", title: "Two Sum" },
-    { id: "arr-contains-dup", title: "Contains Duplicate" },
+  // --- Hooks Fundamentals ---
+  "useState": [
+    { id: "us-counter", title: "Build a Counter with useState" },
+    { id: "us-toggle", title: "Toggle Dark/Light Mode" },
   ],
-  "two-pointers": [
-    { id: "tp-valid-palindrome", title: "Valid Palindrome" },
-    { id: "tp-three-sum", title: "3Sum" },
+  "useEffect": [
+    { id: "ue-fetch", title: "Fetch Data from API" },
+    { id: "ue-timer", title: "Build a Countdown Timer" },
   ],
-  "stack": [
-    { id: "stack-valid-paren", title: "Valid Parentheses" },
-    { id: "stack-min-stack", title: "Min Stack" },
+  "useRef": [
+    { id: "ur-focus", title: "Auto Focus Input Field" },
+    { id: "ur-stopwatch", title: "Stopwatch with useRef" },
   ],
-  "binary": [
-    { id: "bin-binary-search", title: "Binary Search" },
-    { id: "bin-rotated-array", title: "Search in Rotated Array" },
+
+  // --- Hooks Advanced ---
+  "useMemo": [
+    { id: "um-expensive", title: "Optimize Expensive Calculation" },
+    { id: "um-filter", title: "Memoized List Filter" },
   ],
-  "sliding": [
-    { id: "sw-max-subarray-sum", title: "Max Subarray Sum (k)" },
-    { id: "sw-longest-substring", title: "Longest Substring w/o Repeat" },
+  "useCallback": [
+    { id: "uc-button", title: "Stable Button Callback" },
+    { id: "uc-list", title: "Memoized Callback for Child Component" },
   ],
-  "linked": [
-    { id: "ll-reverse", title: "Reverse Linked List" },
-    { id: "ll-merge-two", title: "Merge Two Sorted Lists" },
+  "useReducer": [
+    { id: "urc-counter", title: "Counter with useReducer" },
+    { id: "urc-todo", title: "Todo App with useReducer" },
   ],
-  "trees": [
-    { id: "tree-level-order", title: "Binary Tree Level Order" },
-    { id: "tree-valid-bst", title: "Validate BST" },
+  "useContext": [
+    { id: "ucx-theme", title: "Theme Context Provider" },
+    { id: "ucx-auth", title: "User Auth with Context" },
   ],
-  "tries": [
-    { id: "trie-implement", title: "Implement Trie" },
+  "customHooks": [
+    { id: "ch-local", title: "useLocalStorage Hook" },
+    { id: "ch-fetch", title: "useFetch Hook" },
   ],
-  "backtracking": [
-    { id: "bt-subsets", title: "Subsets" },
-    { id: "bt-permutations", title: "Permutations" },
+
+  // --- State & Data Flow ---
+  "lifting": [
+    { id: "lift-form", title: "Lift State Up in Form Inputs" },
+    { id: "lift-counter", title: "Share Counter Between Components" },
   ],
-  "heap": [
-    { id: "heap-kth-largest", title: "Kth Largest Element" },
+  "propDrill": [
+    { id: "pd-profile", title: "Pass User Data Down Multiple Levels" },
+    { id: "pd-theme", title: "Theme Prop Drilling" },
   ],
-  "graphs": [
-    { id: "graph-bfs", title: "BFS Traversal" },
-    { id: "graph-dfs", title: "DFS Traversal" },
+
+  // --- Routing ---
+  "router": [
+    { id: "rr-basic", title: "Setup Basic Routing" },
+    { id: "rr-dynamic", title: "Dynamic Route with Params" },
   ],
-  "dp-1d": [
-    { id: "dp-climb-stairs", title: "Climbing Stairs" },
+  "protected": [
+    { id: "pr-auth", title: "Protected Route with Auth" },
   ],
-  "intervals": [
-    { id: "int-merge-intervals", title: "Merge Intervals" },
+
+  // --- Performance ---
+  "lazy": [
+    { id: "lz-split", title: "Code Splitting with React.lazy" },
+    { id: "lz-suspense", title: "Data Loading with Suspense" },
   ],
-  "greedy": [
-    { id: "greedy-activity", title: "Activity Selection" },
+  "error": [
+    { id: "eb-boundary", title: "Build an Error Boundary" },
   ],
-  "adv-graphs": [
-    { id: "graph-dijkstra", title: "Dijkstra Shortest Path" },
+
+  // --- Testing ---
+  "testingLib": [
+    { id: "rtl-render", title: "Test Component Rendering" },
+    { id: "rtl-events", title: "Test User Events" },
   ],
-  "dp-2d": [
-    { id: "dp2d-unique-paths", title: "Unique Paths" },
+  "jest": [
+    { id: "jest-mock", title: "Mock a Function with Jest" },
+    { id: "jest-snap", title: "Snapshot Testing" },
   ],
-  "bit": [
-    { id: "bit-single-number", title: "Single Number" },
+
+  // --- Ecosystem ---
+  "server": [
+    { id: "sc-ssr", title: "Server-side Rendering Example" },
   ],
-  "math": [
-    { id: "math-geometry", title: "Closest Point to Line" },
+  "query": [
+    { id: "rq-fetch", title: "Data Fetching with React Query" },
+    { id: "rq-cache", title: "Cache API Data with React Query" },
+  ],
+  "animation": [
+    { id: "fm-animate", title: "Basic Animation with Framer Motion" },
+    { id: "fm-drag", title: "Draggable Component" },
+  ],
+  "a11y": [
+    { id: "a11y-form", title: "Accessible Form with Labels" },
+    { id: "a11y-keyboard", title: "Keyboard Accessible Menu" },
   ],
 };
