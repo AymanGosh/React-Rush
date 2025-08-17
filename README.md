@@ -3,6 +3,13 @@
 ReactCraft is a coding challenge sandbox for practicing **React interview problems**.  
 It provides an interactive environment to solve problems, test your solutions, and preview your code in real time.  
 
+## 📸 Preview
+
+Here’s an example of the interactive hooks roadmap:
+
+![Hooks Tree Preview](docs/screenshots/hooks-tree.png)
+![Use State Preview](docs/screenshots/use-state.png)
+
 ## 🚀 Features
 - 📝 **Live Code Editor** – Write and edit your React code directly in the browser.  
 - 👀 **Preview Panel** – Instantly see how your solution renders.  
