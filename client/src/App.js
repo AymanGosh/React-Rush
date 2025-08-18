@@ -2,15 +2,18 @@
 import Landing from "./components/Landing";
 import HomePage from "./components/HomePage";
 
- import { BrowserRouter, Routes, Route } from "react-router-dom";
+ import {  Routes, Route,useParams } from "react-router-dom";
 import RoadmapDiagramWithSidebar from "./components/roadmap/RoadmapDiagramWithSidebar";
 import { nodes, edges } from "./data/roadmapGraphNodesEdges";
 import { topicQuestions } from "./data/topicQuestions";
 
 function QuestionPage() {
   // Render your editor/runner using question id from route
-  // e.g., const { id } = useParams();
-  return <div style={{ padding: 24, color: "#0f172a" }}>Question page… hook to your runner</div>;
+  // e.g., 
+  const { id } = useParams();
+//  return <div style={{ padding: 24, color: "#0f172a" }}>Question page… hook to your runner{id}</div>;
+  return <HomePage id={id}/>
+
 }
 
 export default function App() {

@@ -1,12 +1,12 @@
 export const topicQuestions = {
   // --- Hooks Fundamentals ---
   "useState": [
-    { id: "us-counter", title: "Build a Counter with useState" },
-    { id: "us-toggle", title: "Toggle Dark/Light Mode" },
+    { id: "0", title: "Build a Counter with useState" },
+    { id: "1", title: "Toggle Dark/Light Mode" },
   ],
   "useEffect": [
-    { id: "ue-fetch", title: "Fetch Data from API" },
-    { id: "ue-timer", title: "Build a Countdown Timer" },
+    { id: "2", title: "Fetch Data from API" },
+    { id: "3", title: "Build a Countdown Timer" },
   ],
   "useRef": [
     { id: "ur-focus", title: "Auto Focus Input Field" },

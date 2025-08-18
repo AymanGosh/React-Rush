@@ -7,10 +7,10 @@ import { challenges } from "../data/challenges";
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels'
  
 
-const defaultCode = challenges[0].defaultCode;
 
-export default function HomePage() {
-  const [code, setCode] = useState(defaultCode);
+export default function HomePage({id}) {
+  const [code, setCode] = useState(challenges[id].defaultCode);
+
 
   const handleSubmit = async () => {
     try {
