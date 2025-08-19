@@ -33,7 +33,6 @@ export default function HomePage({id}) {
 
   return (
   <div className="page-container">
-      <header className="navbar">🚀 Navbar</header>
          
       <PanelGroup direction="horizontal" className="h-full">
         {/* Left Column: 2x width (66%) */}
@@ -61,7 +60,7 @@ export default function HomePage({id}) {
       </PanelGroup>
 
  
-      <footer className="footer">© 2025 Footer</footer>
+    
 
       <button onClick={handleSubmit} className="bg-blue-600 text-white px-4 py-2 rounded">
   Submit

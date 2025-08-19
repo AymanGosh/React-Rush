@@ -100,8 +100,8 @@ export default function RoadmapDiagramWithSidebar({
           style: { stroke: "#9FB3C8", strokeWidth: 2 },
         }}
       >
-        <Controls />
-        <Background color="#334155" gap={16} />
+       
+        
       </ReactFlow>
 
       {/* Sidebar */}

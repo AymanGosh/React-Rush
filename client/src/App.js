@@ -1,7 +1,7 @@
  
 import Landing from "./components/Landing";
 import HomePage from "./components/HomePage";
-
+import "./App.css";
  import {  Routes, Route,useParams } from "react-router-dom";
 import RoadmapDiagramWithSidebar from "./components/roadmap/RoadmapDiagramWithSidebar";
 import { nodes, edges } from "./data/roadmapGraphNodesEdges";
@@ -18,6 +18,8 @@ function QuestionPage() {
 
 export default function App() {
   return (
+      <div className="page-container">
+      <header className="navbar">🚀 Navbar</header>
       <Routes>
         <Route
           path="/"
@@ -25,7 +27,9 @@ export default function App() {
         />
         <Route path="/question/:id" element={<QuestionPage />} />
       </Routes>
+      <footer className="footer">© 2025 Footer</footer>
 
+    </div>
    
   )
 }
