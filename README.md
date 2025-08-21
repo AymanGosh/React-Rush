@@ -2,7 +2,7 @@
 
 ReactRush is a coding challenge sandbox for practicing **React interview problems**.  
 It provides an interactive environment to solve problems, test your solutions, and preview your code in real time.  
-
+https://www.linkedin.com/company/react-rush/  
 
 
 ## 🚀 Features
