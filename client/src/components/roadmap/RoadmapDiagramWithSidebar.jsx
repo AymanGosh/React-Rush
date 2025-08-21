@@ -1,7 +1,5 @@
-import React, { useMemo, useCallback, useState } from "react";
+import {useMemo, useCallback, useState } from "react";
 import ReactFlow, {
-  Background,
-  Controls,
   Handle,
   Position,
 } from "reactflow";

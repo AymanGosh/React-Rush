@@ -1,9 +1,9 @@
 import LivePreview  from "./LivePreview";
 import CodeEditor from "./CodeEditor";
 import DescriptionPanel from "./DescriptionPanel";
-import "./HomePage.css";
-import React, { useEffect, useRef , useState} from "react";
-import { challenges } from "../data/challenges";
+import "./ChallengePage.css";
+import { useState} from "react";
+import { challenges } from "../../data/challenges";
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels'
  
 

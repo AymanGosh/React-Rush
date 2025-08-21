@@ -1,7 +1,6 @@
-import React from 'react';
 
 
-import { challenges } from "../data/challenges";
+import { challenges } from "../../data/challenges";
 
 
 const title = challenges[0].title;
