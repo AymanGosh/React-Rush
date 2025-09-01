@@ -17,7 +17,7 @@ function QuestionPage() {
 export default function App() {
   return (
       <div className="page-container">
-      <header className="navbar">🚀 Navbar</header>
+      <header className="navbar">🚀 Navbar <button>auth</button></header>
       <Routes>
         <Route
           path="/"
