@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Full height of the window */
+}
+
+
+.description {
+  margin: 0;
+  white-space: pre-wrap; /* Optional: wraps long lines in <pre> */
+  font-size:20px;
+  border: 1px solid #ccc;
+   
+}
+.scrollable-content {
+  overflow-y: auto;
+  flex: 1;
+ 
+}
