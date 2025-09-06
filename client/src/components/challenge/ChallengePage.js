@@ -2,17 +2,29 @@ import LivePreview  from "./LivePreview";
 import CodeEditor from "./CodeEditor";
 import DescriptionPanel from "./DescriptionPanel";
 import "./ChallengePage.css";
-import { useState} from "react";
-import { challenges } from "../../data/challenges";
+import { useState,useEffect} from "react";
+import { getChallenge } from "../../api/index";
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels'
  
 
 
-export default function HomePage({id}) {
-  const [code, setCode] = useState(challenges[id].defaultCode);
+export default function ChallengePage({id}) {
+  const [challenge, setChallenge] = useState({});
+  const [code, setCode] = useState("");
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await getChallenge(id);
+        setChallenge(result);
+        setCode(result.defaultCode)
+      } catch (e) {
+        console.error(e.message);
+      } 
+    };
 
-
+    fetchData(); // 👈 run it
+  }, []);
 
   return (
   <div className="page-container">
@@ -23,7 +35,7 @@ export default function HomePage({id}) {
           <PanelGroup direction="vertical">
             {/* Top: Description */}
             <Panel defaultSize={30} className="live-preview live-preview p-4 overflow-auto">
-               <DescriptionPanel /> 
+               <DescriptionPanel title={challenge.title} description={challenge.description}/> 
             </Panel>
             <PanelResizeHandle className="h-1 bg-gray-300 cursor-row-resize" />
             {/* Bottom: CodeEditor */}
@@ -41,11 +53,6 @@ export default function HomePage({id}) {
           <LivePreview code={code} />
         </Panel>
       </PanelGroup>
-
- 
-    
-
-
     </div>
   );
 }

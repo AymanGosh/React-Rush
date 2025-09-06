@@ -1,6 +1,6 @@
 import ChallengePage from "./components/challenge/ChallengePage";
 import "./App.css";
- import {  Routes, Route,useParams } from "react-router-dom";
+ import {  Routes, Route,useParams,Link  } from "react-router-dom";
 import RoadmapDiagramWithSidebar from "./components/roadmap/RoadmapDiagramWithSidebar";
 import { nodes, edges } from "./data/roadmapGraphNodesEdges";
 import { topicQuestions } from "./data/topicQuestions";
@@ -17,7 +17,10 @@ function QuestionPage() {
 export default function App() {
   return (
       <div className="page-container">
-      <header className="navbar">🚀 Navbar</header>
+      <header className="navbar">
+        <Link to="/">🏠 Home</Link>
+      </header>
+
       <Routes>
         <Route
           path="/"
@@ -25,7 +28,7 @@ export default function App() {
         />
         <Route path="/question/:id" element={<QuestionPage />} />
       </Routes>
-      <footer className="footer">© 2025 Footer</footer>
+      <footer className="footer">© 2025 React Rush</footer>
 
     </div>
    
