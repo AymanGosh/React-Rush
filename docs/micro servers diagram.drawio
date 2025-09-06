@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
-  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1123" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1" pages="2">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="uml">
+    <mxGraphModel dx="786" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,8 +13,8 @@
         <mxCell id="E1QTNphe9JhFKRzoQSfT-2" value="user" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="151" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E1QTNphe9JhFKRzoQSfT-5" value="db qustions" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="515" y="30" width="90" height="60" as="geometry" />
+        <mxCell id="E1QTNphe9JhFKRzoQSfT-5" value="db challenges and topics" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="515" y="20" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="6lvuWyY8wGujHDRmP9Fm-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E1QTNphe9JhFKRzoQSfT-10" target="E1QTNphe9JhFKRzoQSfT-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -28,7 +28,7 @@
         <mxCell id="6lvuWyY8wGujHDRmP9Fm-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E1QTNphe9JhFKRzoQSfT-14" target="6lvuWyY8wGujHDRmP9Fm-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E1QTNphe9JhFKRzoQSfT-14" value="controller qustions" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="E1QTNphe9JhFKRzoQSfT-14" value="controller challenges" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="151" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E1QTNphe9JhFKRzoQSfT-20" value="users" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
@@ -37,11 +37,58 @@
         <mxCell id="6lvuWyY8wGujHDRmP9Fm-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6lvuWyY8wGujHDRmP9Fm-5" target="E1QTNphe9JhFKRzoQSfT-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6lvuWyY8wGujHDRmP9Fm-5" value="qustions&amp;nbsp;&lt;br&gt;queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="6lvuWyY8wGujHDRmP9Fm-5" value="challenges&lt;br&gt;queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="680" y="151" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6lvuWyY8wGujHDRmP9Fm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="E1QTNphe9JhFKRzoQSfT-10" target="E1QTNphe9JhFKRzoQSfT-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WcnrgYP6tIEXK5RfLipa" name="Challenge Page">
+    <mxGraphModel dx="786" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-1" target="QyeoaORCu3AtqvU96Vxp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-1" target="QyeoaORCu3AtqvU96Vxp-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-1" target="QyeoaORCu3AtqvU96Vxp-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5L16BQaVKbbPFSBXeKIn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-1" target="QyeoaORCu3AtqvU96Vxp-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-1" value="ChallengePage(title,description,code)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="80" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-3" value="Description Panel&lt;br&gt;(title,description)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-5" value="Code Editor(code)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-7" value="Live Preview(code)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.422;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-1" target="QyeoaORCu3AtqvU96Vxp-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5L16BQaVKbbPFSBXeKIn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QyeoaORCu3AtqvU96Vxp-12" target="QyeoaORCu3AtqvU96Vxp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-12" value="api" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="95" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-15" value="Challenge by ID&lt;br&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;(title,description,deafultCode)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QyeoaORCu3AtqvU96Vxp-17" value="controller challenges" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

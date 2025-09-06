@@ -1,13 +1,12 @@
 
 
-import { challenges } from "../../data/challenges";
+ 
 import "./DescriptionPanel.css";
 
-const title = challenges[0].title;
-const description = challenges[0].description;
+ 
 
 
-export default function DescriptionPanel() {
+export default function DescriptionPanel({title,description}) {
   return (
     <div className="container">
       <h2>{title}</h2>

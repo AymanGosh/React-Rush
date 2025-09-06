@@ -62,3 +62,26 @@
   text-align: center;
   font-size: 0.9rem;
 }
+
+
+/* App.css */
+
+.navbar {
+
+  background-color: #8c00ff;
+  color: #ccc;
+  padding: 1rem;
+  display: flex;
+  
+  align-items: center;
+}
+
+.navbar a {
+  color: #facc15; /* Amber (yellow-ish) */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
